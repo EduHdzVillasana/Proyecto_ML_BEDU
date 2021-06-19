@@ -6,3 +6,8 @@ Se probarán 4 instancias de modelos de regresiones lineales para obtener un mod
 ### Instancia 1:
 **Parámetros:**
 * Varíables de entradas: 7
+
+**Observaciones:** 
+* Al entrenar por primera ve el modelo y probarlo con el dataset de prueba se vió sorprendentemente preciso, la medida $r^2$ fue de 0.9.
+
+![](images/1.png)
