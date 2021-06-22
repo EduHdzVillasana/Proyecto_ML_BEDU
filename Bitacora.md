@@ -22,3 +22,28 @@ Se probarán 4 instancias de modelos de regresiones lineales para obtener un mod
 ![Gráfica obtenida del dataset de prueba](images/3.png)
 
 * Es evidente que el modelo no predice los crímenes así que se descarta esta instancia.
+
+### Instancia 2:
+**Parámetros:**
+* Varíables de entradas: 14
+**Observaciones**
+* Se presentó un comportamiento similar al de la instancia anterior, se decidió no seguir probando con una regresión lineal.
+
+## LSTM
+### Instancia 1:
+**Parámetros**
+* Elementos por muestra : 30
+* Capas ocultas: 3 (50,50,50)
+* Optimizador : adam
+* loss = mean squared error
+
+**Observaciones**
+* Para predicción inmediata se tuvo un MSE de 5175 y un r2 de 0.6
+* El modelo no predijo con presición los crímenes a mas de 1 dia
+
+### Instancia 2:
+**Parámetros**
+* Elementos por muestra : 60
+* Capas ocultas: 3 (50,50,50)
+* Optimizador : adam
+* loss = mean squared error
