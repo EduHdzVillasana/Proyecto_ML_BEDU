@@ -23,11 +23,17 @@ Se probarán 4 instancias de modelos de regresiones lineales para obtener un mod
 
 * Es evidente que el modelo no predice los crímenes así que se descarta esta instancia.
 
+* Predicción de un dia en adelante: MSE = 4148, r2 = 0.56
+* Forecasting: MSE = 144693, r2 = -10
+
 ### Instancia 2:
 **Parámetros:**
 * Varíables de entradas: 14
 **Observaciones**
 * Se presentó un comportamiento similar al de la instancia anterior, se decidió no seguir probando con una regresión lineal.
+
+* Predicción: MSE = 4028, r2 = 0.56
+* Forecasting: MSE = 109249, r2 = -30
 
 ## LSTM
 ### Instancia 1:
@@ -38,8 +44,8 @@ Se probarán 4 instancias de modelos de regresiones lineales para obtener un mod
 * loss = mean squared error
 
 **Observaciones**
-* Para predicción inmediata se tuvo un MSE de 5175 y un r2 de 0.6
-* El modelo no predijo con presición los crímenes a mas de 1 dia
+* Prediccion (un dia en adelante): MSE = 4989, r2 = 0.611
+* Forecasting: MSE = 14349, r2 = -0.11
 
 ### Instancia 2:
 **Parámetros**
@@ -47,3 +53,19 @@ Se probarán 4 instancias de modelos de regresiones lineales para obtener un mod
 * Capas ocultas: 3 (50,50,50)
 * Optimizador : adam
 * loss = mean squared error
+
+**Observaciones**
+
+* Prediccion: MSE = 4990, r2 = 0.611
+* Forecasting: MSE = 14997, r2 = -0.16
+
+## Prophet
+
+**Observaciones**
+
+* Forecasting primeros 100 días: MSE = 4250, r2 = -0.64
+
+## SARIMAX
+
+* Forecasting: MSE 4244, r2 = -0.6
+
